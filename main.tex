@@ -1,0 +1,75 @@
+\documentclass[paper=a4, parskip=half-]{scrartcl}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{marvosym} % for the \Lightning symbol
+\usepackage{amssymb} % more icons/symbols
+\usepackage{tablefootnote} % for footnotes in tables
+\usepackage{ccicons} % creative commons icon
+\usepackage{hyperref} % for hyper links
+\usepackage[dvipsnames]{xcolor} % to color stuff -- dvipnames for additional color names
+\usepackage[shortlabels]{enumitem} % to modify enumeration labels
+\usepackage{tcolorbox} % for colored boxes - see https://tex.stackexchange.com/questions/66154/how-to-construct-a-coloured-box-with-rounded-corners/172608#172608
+\usepackage{tikz} % drawing stuff
+\usepackage{eurosym} % € (no, default LaTeX font doesn't include it)
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=30mm,
+ }
+
+
+\title{Information Security}
+\author{aeggler, dsparber, jkleine, thgoebel et alii}
+\date{ETH Zürich, FS 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+% Custom commands
+\newcommand{\setzeroone}{\lbrace 0, 1 \rbrace} % => {0,1} (Notice the missing $$)
+\newcommand{\horizontaldivider}{\begin{center} \line(1,0){350} \end{center}}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\vspace{5cm}
+\thispagestyle{empty}
+
+
+\begin{abstract}
+This documents is a mélange of a script and a simple list of definitions for the course \textit{Information Security} at ETH Zurich. It contains lots of definitions, a few explanations here and there, and -- where applicable -- even diagrams! You won't, however, find any involved proofs or lots of examples.
+
+This summary is created during the spring semester 2020. But due to the few changes in syllabus content in the past we have reason to believe that it is also relevant beyond that very semester.
+
+We do not guarantee correctness or completeness, nor is this document endorsed by the lecturers. Feel free to point out any erratas.
+\end{abstract}
+
+\begin{center}
+\vfill
+Published under CC BY-NC-SA \\
+\vspace{0.2cm}
+\ccbyncsa
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+\newpage
+
+\input{part1}
+\newpage
+
+\input{part2}
+\newpage
+
+\input{appendix}
+
+\end{document}

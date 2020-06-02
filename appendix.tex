@@ -1,0 +1,75 @@
+%
+% Appendix
+%
+\appendix
+
+\part{Appendix}
+
+\section{Notation}
+
+Below is a non-exhaustive list of notations and symbols which are used throughout this document and which the reader may not have seen before:
+
+\begin{itemize}
+    \item $||$ --- concatenation operator
+    \item $\oplus$ --- xor operator
+    \item $x \leftarrow G$ --- $x$ is chosen from group $G$
+    \item PPT --- probabilistic polynomial time
+\end{itemize}
+
+
+\subsection{Message construct notation}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+%\hline
+Message & $\{ M \}$ \\
+Name & $A$, $B$ or $Alice$, $Bob$ \\
+Asymmetric keys &  $A$ has public key $K_A$ and private key $K_A^{-1}$ \\
+Symmetric keys & $K_{AB}$ shared by $A$ and $B$ \\
+Encryption &  asymmetric $\{ M \}_{K_A}$ or symmetric $\{ M \}_{K_{AB}}$ \\
+Signing &  $\{ M \}_{K_A^{-1}}$\\
+Nonces &  $N_A$ ("number used once", freshly created by $A$)\\
+Timestamps & $T$ (eg expiration) \\
+%\hline
+\end{tabular}
+\end{table}
+
+\section{Reading Tamarin Graphs}
+
+Actions of the same agent are coloured with the same shade of green.
+
+The boxes mirror a labeled multiset rewriting rule $l \xrightarrow{a} r$. Thus the three rows, top to bottom, mean:
+
+\begin{enumerate}
+    \item state fact before rewriting
+    \item action fact/event
+    \item state fact after rewriting
+\end{enumerate}
+
+Arrows have the following colour-coding:
+
+\begin{itemize}
+    \item grey   $\longrightarrow$ using persistent facts
+    \item black  $\longrightarrow$ using linear facts
+    \item orange $\longrightarrow$ sending a message into to the network, i.e. to the adversary
+    \item dotted $\longrightarrow$ attacker using a rule
+\end{itemize}
+
+\pagebreak
+
+Other syntactical things to note:
+
+\begin{itemize}
+    \item \$ -- prefixes public values (e.g. agent names, state facts. \\
+                Notabene: recipients of messages containing values prefixed with \$ do check whether the value is indeed public.
+    \item ! -- prefixes persistent facts
+    \item $\sim$ -- prefixes fresh facts
+\end{itemize}
+
+\underline{Exam relevance:}\\
+It is sufficient to be able to read a Tamarin graph. You neither need be able to write Tamarin theory from scratch, nor to know any detailed syntax -- but you are expected to be familiar with the Dolev-Yao attacker model and be able to reason about security protocols and their execution. See past exams for examples.
+
+
+%\bibliographystyle{plain}
+%\bibliography{references}
