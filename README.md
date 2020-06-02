@@ -1,4 +1,4 @@
-# ETH Information Security Summary
+# Information Security at ETH
 
 This documents is a melange of a script and a simple list of definitions for the course
 Information  Securityat ETH Zurich.  It contains lots of definitions,  a few explanations
