@@ -204,7 +204,7 @@ We formalise the analysis power of a Dolev-Yao adversary as follows:
 Let $T$ be the initial set of messages known to the adversary. $has(T)$ is the smallest set of messages inferable from $T$, using the following derivation rules:
 
 \begin{itemize}
-    \item $el: \qquad t \in T \implies t \in has(T) $
+    \item $elem: \qquad t \in T \implies t \in has(T) $
     \item $pair: \quad t_1 \in has(T) \land t_2 \in has(T) \implies (t_1, t_2) \in has(T) $
     \item $fst,snd: \quad (t_1, t_2) \in has(T) \implies t_1 \in has(T) \land t_2 \in has(T) $
     \item $enc: \qquad t_1 \in has(T) \land t_2 \in has(T) \implies \{ t_1 \}_{t_2} \in has(T) $

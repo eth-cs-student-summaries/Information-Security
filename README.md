@@ -11,3 +11,7 @@ that very semester.
 
 We do not guarantee correctness or completeness, nor is this document endorsed by thelecturers.  
 Feel free to point out any erratas.
+
+## TODO
+
+Split everything into one file per chapter (instead of these huge files for each of the two parts).

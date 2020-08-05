@@ -1,0 +1,9 @@
+# LaTeX ignores
+
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.toc
